@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CARIAD AndroidTest</string>
+    <string name="address_info_title">Address Info :</string>
+    <string name="number_of_charging_stations">Number of Charging Stations</string>
+    <string name="network_error">Check your internet connection and Try Again!</string>
+    <string name="charging_station_details">Charging Station Details</string>
+</resources>

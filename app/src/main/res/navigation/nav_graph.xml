@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.pawan.cariadandroidtest.ui.map.StationMapsFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_station_maps">
+
+        <action
+            android:id="@+id/action_stationMapFragment_to_stationDetailsBottomSheetFragment"
+            app:destination="@id/stationDetailsBottomSheetFragment"
+            app:popUpTo="@id/mapFragment"/>
+    </fragment>
+
+    <dialog
+        android:id="@+id/stationDetailsBottomSheetFragment"
+        android:name="com.pawan.cariadandroidtest.ui.map.StationDetailsBottomSheetFragment"
+        android:label="details_dialog_fragment"
+        tools:layout="@layout/fragment_station_details_bottom_sheet" />
+
+</navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="space_margin">8dp</dimen>
+
+    <dimen name="txt_heading">18sp</dimen>
+    <dimen name="txt_title_size">16sp</dimen>
+    <dimen name="txt_sub_Title">14sp</dimen>
+</resources>

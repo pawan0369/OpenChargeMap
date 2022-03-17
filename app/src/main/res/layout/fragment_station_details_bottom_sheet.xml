@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.map.StationDetailsBottomSheetFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_heading"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:text="@string/charging_station_details"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_address_title"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_address_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_title_size"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/horizontal_margin"
+        android:text="@string/address_info_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintBottom_toTopOf="@id/tv_address_info"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_address_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_sub_Title"
+        android:layout_marginTop="@dimen/space_margin"
+        android:layout_marginStart="@dimen/space_margin"
+        android:layout_marginEnd="@dimen/space_margin"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintBottom_toTopOf="@id/tv_station_title"
+        tools:text="@string/app_name"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_station_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_title_size"
+        android:text="@string/number_of_charging_stations"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/space_margin"
+        android:layout_marginBottom="@dimen/vertical_margin"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_info"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintEnd_toStartOf="@id/tv_station_count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_station_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_title_size"
+        android:gravity="end"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/tv_station_title"
+        app:layout_constraintStart_toEndOf="@id/tv_station_title"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintBottom_toBottomOf="@id/tv_station_title"
+        tools:text="2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
